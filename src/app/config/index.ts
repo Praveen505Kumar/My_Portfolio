@@ -26,7 +26,7 @@ import { skills } from '@/app/config/skills';
 export const portfolioConfig: PortfolioConfig = {
   siteMetadata: {
     title: 'Praveen Kumar',
-    description: 'Portfolio website by Praveen',
+    description: 'Portfolio website by Praveen Kumar',
     author: 'Praveen Kumar',
   },
 

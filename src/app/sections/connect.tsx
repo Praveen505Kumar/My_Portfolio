@@ -145,7 +145,9 @@ const ConnectWithMe: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">{renderSocialLinks()}</div>
+          <div className="flex flex-wrap md:flex-nowrap items-center justify-centers gap-6">
+            {renderSocialLinks()}
+          </div>
         </motion.div>
 
         {/* Add a CSS animation for the gradient borders */}
