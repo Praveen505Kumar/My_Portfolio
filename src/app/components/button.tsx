@@ -61,7 +61,6 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       target={target}
       rel={rel}
-      download={false}
       className={`${baseClasses} ${variantClasses[variant]} ${className} inline-flex transition-transform duration-300`}
     >
       <span className="flex items-center">
