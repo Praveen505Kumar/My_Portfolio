@@ -6,6 +6,7 @@ import { projects } from '@/app/config/projects';
 import { Button } from '@/app/components/button';
 import { isMinimal } from '@/app/utils';
 import { SiGithub } from '@icons-pack/react-simple-icons';
+import { socials } from '../config/socials';
 
 const Projects: React.FC = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -176,7 +177,7 @@ const Projects: React.FC = () => {
 
         {/* Projects grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="flex flex-wrap gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -366,7 +367,7 @@ const Projects: React.FC = () => {
         {/* View more button */}
         <div className="mt-16 text-center">
           <Button
-            href="https://github.com/PraveenGongada"
+            href={socials.find(s => s.name === 'GitHub')?.url || '#'}
             label="View More Projects"
             icon={<SiGithub size={18} />}
             variant="secondary"
