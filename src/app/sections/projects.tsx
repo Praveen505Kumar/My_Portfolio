@@ -187,7 +187,7 @@ const Projects: React.FC = () => {
             <motion.div
               key={project.id}
               variants={cardVariants}
-              className="group h-full"
+              className="group h-full w-full"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >

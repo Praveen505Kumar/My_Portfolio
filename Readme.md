@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Deployment](https://img.shields.io/github/deployments/PraveenGongada/portfolio/github-pages?style=flat-square&label=GitHub%20Pages)](https://github.com/PraveenGongada/portfolio/deployments)
+[![Deployment](https://img.shields.io/github/deployments/Praveen505Kumar/My_Portfolio/github-pages?style=flat-square&label=GitHub%20Pages)](https://github.com/Praveen505Kumar/My_Portfolio/deployments)
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=flat-square&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![Tailwind](https://img.shields.io/badge/Tailwind-3.4.1-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
@@ -11,7 +11,7 @@
   <div>
     <p></p>
     <p style="margin: 0; font-size: 16px; color: #eaeaea;">🚀 Showcase your journey with this modern, interactive portfolio template 🌟</p>   <p></p>
-    <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/home.png" alt="Portfolio Home" width="90%" style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
+    <img src="https://github.com/Praveen505Kumar/My_Portfolio/blob/main/docs/images/home.png" alt="Portfolio Home" width="90%" style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
   </div>
 </div>
 
@@ -20,22 +20,22 @@
 <div align="center">
   <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 20px;">
     <div style="flex: 1;">
-      <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/about.png" alt="About Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <img src="https://github.com/Praveen505Kumar/My_Portfolio/blob/main/docs/images/about.png" alt="About Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
       <p><em>About section with personal journey and qualities</em></p>
     </div>
     <div style="flex: 1;">
-      <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/projects.png" alt="Projects Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <img src="https://github.com/Praveen505Kumar/My_Portfolio/blob/main/docs/images/projects.png" alt="Projects Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
       <p><em>Projects showcase with carousel</em></p>
     </div>
   </div>
   
   <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 10px;">
     <div style="flex: 1;">
-      <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/skills.png" alt="Skills Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <img src="https://github.com/Praveen505Kumar/My_Portfolio/blob/main/docs/images/skills.png" alt="Skills Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
       <p><em>Skills visualization with interactive elements</em></p>
     </div>
     <div style="flex: 1;">
-      <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/connect.png" alt="Connect Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <img src="https://github.com/Praveen505Kumar/My_Portfolio/blob/main/docs/images/connect.png" alt="Connect Section" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
       <p><em>Connect section with animated social links</em></p>
     </div>
   </div>
@@ -115,7 +115,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/praveengongada/portfolio.git
+git clone https://github.com/Praveen505Kumar/My_Portfolio.git
 
 # Navigate to project directory
 cd portfolio
@@ -317,7 +317,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 <div align="center">
   <p>Made with ❤️ by <a href="https://github.com/PraveenKumar505">Praveen Kumar</a></p>
   <p>
-    <a href="https://linkedin.com/in/praveengongada">LinkedIn</a> •
-    <a href="https://praveengongada.com">Website</a>
+    <a href="https://www.linkedin.com/in/praveenkumar505/">LinkedIn</a> •
+    <a href="https://praveen505kumar.github.io/My_Portfolio/">Website</a>
   </p>
 </div>
