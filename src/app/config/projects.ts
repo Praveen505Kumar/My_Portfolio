@@ -1,4 +1,5 @@
 import { Project } from '../types/types';
+import { getAssetPath } from '../utils';
 
 export const projects: Project[] = [
   {
@@ -10,7 +11,7 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/Praveen505Kumar/online-feedback-system',
     // liveLink: 'https://shortly-go.vercel.app/',
     type: 'Full Stack',
-    thumbnail: '/OnlineStudentFeedbackSystem.png',
+    thumbnail: getAssetPath('/OnlineStudentFeedbackSystem.png'),
     // carouselImages: [
     //   'https://raw.githubusercontent.com/PraveenGongada/Shortly/refs/heads/main/frontend/docs/images/register.png',
     //   'https://raw.githubusercontent.com/PraveenGongada/Shortly/refs/heads/main/frontend/docs/images/dashboard.png',
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/Praveen505Kumar/Cakey-Bakey',
     liveLink: '',
     type: 'Full Stack',
-    thumbnail: '/CakeyBakey.png',
+    thumbnail: getAssetPath('/CakeyBakey.png'),
     // gifUrl:
     //   'https://raw.githubusercontent.com/PraveenGongada/Catalyst/refs/heads/main/docs/images/catalyst-demo.gif',
   },

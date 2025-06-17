@@ -4,7 +4,7 @@ import { ChevronDown, ArrowRight, Download } from 'lucide-react';
 import { portfolioConfig } from '@/app/config';
 import { Button } from '@/app/components/button';
 import dynamic from 'next/dynamic';
-import { isMinimal } from '@/app/utils';
+import { getAssetPath, isMinimal } from '@/app/utils';
 
 const TechSphere = dynamic(
   async () => {
@@ -173,7 +173,7 @@ const Home: React.FC<HomeProps> = ({ onConnectClick }) => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6"
             >
               <Button
-                href="/resume.pdf"
+                href={getAssetPath('/resume.pdf')}
                 label="Download Resume"
                 icon={<Download size={18} className="ml-1" />}
                 variant="primary"
