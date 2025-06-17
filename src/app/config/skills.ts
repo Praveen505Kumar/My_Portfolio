@@ -30,6 +30,11 @@ export const skills: Skill[] = [
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
       },
       {
+        name: 'Next.js',
+        color: '#3178C6',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+      },
+      {
         name: 'Angular',
         color: '#F7DF1E',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
@@ -38,6 +43,11 @@ export const skills: Skill[] = [
         name: 'Tailwind CSS',
         color: '#06B6D4',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+      },
+      {
+        name: 'Bootstrap',
+        color: '#06B6D4',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
       },
     ],
   },
@@ -64,16 +74,21 @@ export const skills: Skill[] = [
         color: '#4E9F3D',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',
       },
-      // {
-      //   name: 'Kibana',
-      //   color: '#005571',
-      //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kibana/kibana-original.svg',
-      // },
-      // {
-      //   name: 'Logstash',
-      //   color: '#005571',
-      //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/logstash/logstash-plain.svg',
-      // },
+      {
+        name: 'Pytest',
+        color: '#005571',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg',
+      },
+      {
+        name: 'Poetry',
+        color: '#005571',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/poetry/poetry-original.svg',
+      },
+      {
+        name: 'PHP',
+        color: '#005571',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+      },
     ],
   },
   {
@@ -120,9 +135,9 @@ export const skills: Skill[] = [
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
       },
       {
-        name: 'Jenkins',
+        name: 'GitHub',
         color: '#D33833',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
       },
       {
         name: 'GitHub Actions',
@@ -170,7 +185,7 @@ export const skills: Skill[] = [
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original.svg',
       },
       {
-        name: 'LangGrap',
+        name: 'LangGraph',
         color: '#FF9900',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original.svg',
       },
