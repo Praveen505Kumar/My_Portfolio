@@ -1,23 +1,8 @@
-/*
- * Copyright 2025 Praveen Kumar
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioConfig } from '@/app/config';
-import { Logo } from '@/app/components/logo';
+import { Code, Moon, Sun } from 'lucide-react';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 interface NavBarProps {
   activeSection: string;
@@ -26,6 +11,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
   const { links } = portfolioConfig.navigation;
+  const { theme, toggleTheme } = React.useContext(ThemeContext);
 
   const linkVariants = {
     initial: { opacity: 0, y: -10 },
@@ -37,14 +23,14 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo Section */}
-          <div className="flex-shrink-0">
-            <a
-              onClick={e => onSectionNav(e, 'home')}
-              className="font-medium text-xl tracking-wider text-gray-100"
-            >
-              <Logo />
-            </a>
-          </div>
+          <a
+            href="#home"
+            className="flex items-center space-x-2 text-xl font-bold text-teal-400 cursor-pointer"
+            onClick={e => onSectionNav(e, 'home')}
+          >
+            <Code className="h-6 w-6" />
+            <span>Praveen Kumar</span>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
@@ -72,6 +58,18 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
               ))}
             </div>
           </div>
+          {/* Theme toggle */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? (
+              <Sun className="h-5 w-5 text-yellow-400" />
+            ) : (
+              <Moon className="h-5 w-5 text-gray-700" />
+            )}
+          </button>
         </div>
       </div>
     </nav>
