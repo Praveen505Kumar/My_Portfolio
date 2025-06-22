@@ -168,14 +168,14 @@ const Skills: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
             Technical{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
               Skills
             </span>
           </h2>
           <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             I&apos;ve gained proficiency in various technologies throughout my career. Here are the
             key tools and frameworks I use to build exceptional products.
           </p>
@@ -189,9 +189,9 @@ const Skills: React.FC = () => {
               whileInView={sectionVariants.animate}
               transition={isMinimal ? {} : { duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: '-100px' }}
-              className="bg-gray-800/40 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-emerald-500/30 transition-all duration-300 shadow-lg"
+              className="dark:bg-gray-800/40 backdrop-blur-sm rounded-2xl p-6 border border-emerald-300/40 hover:border-gray-800/30 dark:border-gray-700/50 dark:hover:border-emerald-500/30 transition-all duration-300 shadow-lg"
             >
-              <h3 className="text-xl font-semibold text-gray-200 mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-4 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-md flex items-center justify-center">
                   {getCategoryIcon(skillGroup.category)}
                 </span>
@@ -202,7 +202,8 @@ const Skills: React.FC = () => {
                 {skillGroup.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className="group relative duration-300">
                     <div
-                      className="flex items-center gap-2 px-3 py-2 bg-gray-800/70 rounded-full border border-gray-700 hover:border-emerald-500/50 transition-all duration-300 shadow-md hover:shadow-emerald-500/10"
+                      className="flex items-center gap-2 px-3 py-2 bg-gray-300/20 dark:bg-gray-800/70 rounded-full border dark:border-gray-700 \
+                       dark:hover:border-emerald-500/50 transition-all duration-300 shadow-md hover:shadow-emerald-500/10"
                       style={generateShadowStyle(tech.color)}
                     >
                       <Image
@@ -213,7 +214,7 @@ const Skills: React.FC = () => {
                         className="w-4 h-4"
                         style={{ filter: 'brightness(1.2)' }}
                       />
-                      <span className="text-sm text-gray-300">{tech.name}</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-300">{tech.name}</span>
                     </div>
                     <div
                       className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4/5 h-2 rounded-full bg-black/20 blur-sm opacity-50 transition-opacity duration-300 group-hover:opacity-70"

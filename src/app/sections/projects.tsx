@@ -131,16 +131,24 @@ const Projects: React.FC = () => {
 
   const getTagColor = (tag: string) => {
     const tagColors: Record<string, string> = {
-      React: 'bg-blue-500/20 text-blue-300 border-blue-500/20',
-      'Next.js': 'bg-gray-500/20 text-gray-300 border-gray-500/20',
-      TypeScript: 'bg-blue-600/20 text-blue-300 border-blue-600/20',
-      Tailwind: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/20',
-      Flutter: 'bg-blue-400/20 text-blue-300 border-blue-400/20',
-      Go: 'bg-cyan-600/20 text-cyan-300 border-cyan-600/20',
-      PostgreSQL: 'bg-blue-700/20 text-blue-300 border-blue-700/20',
-      Dart: 'bg-sky-500/20 text-sky-300 border-sky-500/20',
-      'Charm.sh': 'bg-pink-500/20 text-pink-300 border-pink-500/20',
-      default: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
+      React:
+        'bg-blue-500/10 text-blue-700 border-blue-700/20 dark:bg-blue-500/20 dark:text-blue-300 dark:border-blue-500/20',
+      'Next.js':
+        'bg-blue-500/10 text-blue-700 border-blue-700/20 dark:bg-blue-500/20 dark:text-blue-300 dark:border-blue-500/20',
+      TypeScript:
+        'bg-blue-600/10 text-blue-700 border-blue-700/20 dark:bg-blue-600/20 dark:text-blue-300 dark:border-blue-600/20',
+      Tailwind:
+        'bg-cyan-500/10 text-cyan-700 border-cyan-700/20 dark:bg-cyan-500/20 dark:text-cyan-300 dark:border-cyan-500/20',
+      Flutter:
+        'bg-blue-400/10 text-blue-700 border-blue-700/20 dark:bg-blue-400/20 dark:text-blue-300 dark:border-blue-400/20',
+      Go: 'bg-cyan-600/10 text-cyan-700 border-cyan-700/20 dark:bg-cyan-600/20 dark:text-cyan-300 dark:border-cyan-600/20',
+      PostgreSQL:
+        'bg-blue-700/10 text-blue-700 border-blue-700/20 dark:bg-blue-700/20 dark:text-blue-300 dark:border-blue-700/20',
+      Dart: 'bg-sky-500/10 text-sky-700 border-sky-700/20 dark:bg-sky-500/20 dark:text-sky-300 dark:border-sky-500/20',
+      'Charm.sh':
+        'bg-pink-500/10 text-pink-700 border-pink-700/20 dark:bg-pink-500/20 dark:text-pink-300 dark:border-pink-500/20',
+      default:
+        'bg-emerald-500/10 text-emerald-700 border-emerald-700/20 dark:bg-emerald-500/20 dark:text-emerald-300 dark:border-emerald-500/20',
     };
 
     return tagColors[tag] || tagColors.default;
@@ -162,14 +170,14 @@ const Projects: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
             My{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
               Projects
             </span>
           </h2>
           <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Here&apos;s a selection of projects that showcase my skills and passion for building
             exceptional digital experiences across different platforms.
           </p>
@@ -192,7 +200,7 @@ const Projects: React.FC = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               <div
-                className={`bg-gray-800/30 backdrop-blur-sm rounded-2xl overflow-hidden border transition-all duration-500 h-full flex flex-col
+                className={`dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl overflow-hidden border transition-all duration-500 h-full flex flex-col
                 ${
                   hoveredProject === project.id
                     ? 'border-emerald-500/50 shadow-xl shadow-emerald-500/10 translate-y-[-5px]'
@@ -306,17 +314,21 @@ const Projects: React.FC = () => {
                 <div className="p-6 pt-4 flex flex-col flex-grow">
                   {/* Project title with animated underline */}
                   <div className="flex items-center space-x-2">
-                    <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                    <h3 className="text-xl font-semibold text-black dark:text-white">
+                      {project.title}
+                    </h3>
                     {/* Project type badge */}
                     {project.type && (
-                      <div className="inline-flex items-center justify-center bg-emerald-500/10 text-emerald-300 border-emerald-500/20 text-xs font-semibold px-2 py-0.5 rounded-full shadow-inner">
+                      <div className="inline-flex items-center justify-center bg-emerald-500/10 text-emerald-700 border-emerald-700/20 dark:bg-emerald-500/20 dark:text-emerald-300 dark:border-emerald-500/20 text-xs font-semibold px-2 py-0.5 rounded-full shadow-inner">
                         {project.type}
                       </div>
                     )}
                   </div>
 
                   {/* Project description */}
-                  <p className="mt-2 text-gray-300 flex-grow">{project.description}</p>
+                  <p className="mt-2 text-gray-600 dark:text-gray-300 flex-grow">
+                    {project.description}
+                  </p>
 
                   {/* Technology tags */}
                   <div className="mt-5 flex flex-wrap gap-2">
@@ -338,7 +350,7 @@ const Projects: React.FC = () => {
                           href={project.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                          className="flex items-center text-gray-600 dark:text-gray-300 hover:text-emerald-400 transition-colors duration-300"
                           aria-label={`View live demo of ${project.title}`}
                         >
                           <ExternalLink size={18} className="mr-1.5" />
@@ -350,7 +362,7 @@ const Projects: React.FC = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                        className="flex items-center text-gray-600 dark:text-gray-300 hover:text-emerald-400 transition-colors duration-300"
                         aria-label={`View code for ${project.title} on GitHub`}
                       >
                         <SiGithub size={18} className="mr-1.5" />

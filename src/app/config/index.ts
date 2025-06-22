@@ -116,7 +116,7 @@ export const portfolioConfig: PortfolioConfig = {
 
   footer: {
     copyright: `© ${new Date().getFullYear()} Praveen Kumar. All rights reserved.`,
-    tagline: 'Designed and built with ❤️',
+    tagline: 'Designed and built with ❤️ by Praveen Kumar | Powered by Next.js & TailwindCSS',
   },
 };
 

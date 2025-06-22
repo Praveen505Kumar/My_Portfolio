@@ -35,8 +35,11 @@ export const Button: React.FC<ButtonProps> = ({
     primary:
       'bg-gradient-to-r from-emerald-600 to-blue-600 text-white shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40',
     secondary:
-      'bg-gray-800/60 text-white backdrop-blur-sm border border-gray-700 hover:bg-gray-700/60 hover:border-emerald-500/30 shadow-lg hover:shadow-emerald-500/10 hover:translate-y-[-3px]',
-    outline: 'text-white border border-gray-600 hover:border-emerald-500/50',
+      'bg-gray-300/10 dark:bg-gray-800/60 text-black dark:text-white backdrop-blur-sm border border-gray-700  \
+      hover:bg-gray-800/10 hover:border-emerald-500/50 shadow-xl hover:shadow-emerald-500/10 dark:hover:bg-gray-700/60 dark:hover:border-emerald-500/30 \
+      shadow-lg dark:hover:shadow-emerald-500/10 hover:translate-y-[-3px]',
+    outline:
+      'text-black dark:text-white border border-emerald-500/50 hover:border-gray-600 dark:border-gray-600 dark:hover:border-emerald-500/50',
   };
 
   return (

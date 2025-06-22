@@ -88,7 +88,7 @@ export default function Page() {
 
         <MobileNavBar menuOpen={menuOpen} activeSection={activeSection} setMenuOpen={setMenuOpen} />
 
-        <main>
+        <main className="bg-gray-50 dark:bg-gray-900">
           <Home
             onConnectClick={e => {
               handleSectionNav(e, 'connect');

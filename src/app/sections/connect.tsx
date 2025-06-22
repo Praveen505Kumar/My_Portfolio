@@ -1,19 +1,3 @@
-/*
- * Copyright 2025 Praveen Kumar
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { socials } from '@/app/config/socials';
@@ -68,7 +52,7 @@ const ConnectWithMe: React.FC = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block h-full bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:border-opacity-0 transition-all duration-300 overflow-hidden group relative"
+            className="block h-full bg-gray-300/20 dark:bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:border-opacity-0 transition-all duration-300 overflow-hidden group relative"
             style={{
               boxShadow: `0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(${rgbColor}, 0.1)`,
             }}
@@ -100,7 +84,9 @@ const ConnectWithMe: React.FC = () => {
               </div>
 
               {/* Platform name */}
-              <span className="text-l font-medium text-white mb-1">{link.name}</span>
+              <span className="text-l font-medium text-black dark:text-white mb-1">
+                {link.name}
+              </span>
             </div>
           </a>
         </motion.div>
@@ -124,14 +110,14 @@ const ConnectWithMe: React.FC = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font- bold text-black dark:text-white ">
             Connect{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
               With Me
             </span>
           </h2>
           <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-gray-600 dark:text-gray-300  max-w-2xl mx-auto">
             Feel free to connect with me on these platforms to discuss tech, share ideas, or just
             say hello!
           </p>

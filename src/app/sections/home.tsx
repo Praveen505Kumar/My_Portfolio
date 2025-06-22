@@ -76,7 +76,7 @@ const Home: React.FC<HomeProps> = ({ onConnectClick }) => {
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient background with mesh pattern */}
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800" />
+        <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
 
         {/* Subtle grid */}
         <div
@@ -129,7 +129,7 @@ const Home: React.FC<HomeProps> = ({ onConnectClick }) => {
               className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight"
               variants={itemVariants}
             >
-              <span className="text-white">{config.greeting} </span>
+              <span className="text-black dark:text-white">{config.greeting} </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
                 {config.name}
               </span>
@@ -140,15 +140,15 @@ const Home: React.FC<HomeProps> = ({ onConnectClick }) => {
               <div className="relative h-full flex items-center justify-center lg:justify-start">
                 {isMinimal ? (
                   // For mobile
-                  <span className="text-xl sm:text-2xl text-gray-300 flex justify-center flex-wrap">
+                  <span className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 flex justify-center flex-wrap">
                     <span className="mr-2">I&apos;m passionate about</span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
+                    <span className="dark:text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
                       {config.typingTexts[0]}
                     </span>
                   </span>
                 ) : (
                   // For desktop
-                  <span className="text-xl sm:text-2xl text-gray-300 flex flex-wrap">
+                  <span className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 flex flex-wrap">
                     <span className="mr-2">I&apos;m passionate about</span>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
                       {text}
@@ -162,7 +162,7 @@ const Home: React.FC<HomeProps> = ({ onConnectClick }) => {
             {/* Description */}
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 mb-8"
+              className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0 mb-8"
             >
               {config.description}
             </motion.p>

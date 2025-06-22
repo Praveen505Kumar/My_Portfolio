@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioConfig } from '@/app/config';
-import { Code, Moon, Sun } from 'lucide-react';
+import { Code2, Moon, Sun } from 'lucide-react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 interface NavBarProps {
@@ -19,7 +19,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-40 bg-gray-800/30 backdrop-blur-md border-b border-gray-700/30">
+    <nav className="fixed top-0 left-0 w-full z-40 bg-gray-50 dark:bg-gray-800/30 backdrop-blur-md border-b border-gray-700/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo Section */}
@@ -28,7 +28,7 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
             className="flex items-center space-x-2 text-xl font-bold text-teal-400 cursor-pointer"
             onClick={e => onSectionNav(e, 'home')}
           >
-            <Code className="h-6 w-6" />
+            <Code2 className="h-6 w-6 text-emerald-500" />
             <span>Praveen Kumar</span>
           </a>
 
@@ -49,8 +49,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
                   className={`
                     transition-all 
                     duration-300 
-                    hover:text-emerald-400 
-                    ${activeSection === link.href ? 'text-emerald-400' : 'text-gray-300'}
+                    hover:text-emerald-500 
+                    darK:hover:text-emerald-400 
+                    ${activeSection === link.href ? 'text-emerald-500 dark:text-emerald-400' : 'text-gray-600 dark:text-gray-300'}
                   `}
                 >
                   {link.label}
