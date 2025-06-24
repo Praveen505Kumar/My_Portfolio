@@ -76,3 +76,12 @@ export interface Social {
   /** Brand color of the social platform */
   color: string;
 }
+
+export interface Certification {
+  id: number;
+  title: string;
+  issuer: string;
+  date: string;
+  image: string;
+  link?: string;
+}

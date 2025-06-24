@@ -2,6 +2,7 @@ import { PortfolioConfig } from '@/app/types/config';
 import { socials } from '@/app/config/socials';
 import { projects } from '@/app/config/projects';
 import { skills } from '@/app/config/skills';
+import { certifications } from './certifications';
 
 /**
  * Default portfolio configuration
@@ -23,6 +24,7 @@ export const portfolioConfig: PortfolioConfig = {
       { href: 'about', label: 'About' },
       { href: 'projects', label: 'Projects' },
       { href: 'skills', label: 'Skills' },
+      { href: 'certifications', label: 'Certifications' },
       { href: 'connect', label: 'Connect' },
     ],
   },
@@ -103,6 +105,14 @@ export const portfolioConfig: PortfolioConfig = {
       description:
         "I've gained proficiency in various technologies throughout my career. Here are the key tools and frameworks I use to build exceptional products.",
       categories: skills,
+    },
+
+    certifications: {
+      title: 'My',
+      subtitle: 'Certifications',
+      description:
+        'I have completed several certifications that validate my skills and knowledge in various technologies and methodologies.',
+      certifications: certifications,
     },
 
     connect: {

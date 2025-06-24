@@ -12,6 +12,7 @@ import { MobileNavBar } from '@/app/sections/mobile-navbar';
 import { NavBar } from '@/app/sections/navbar';
 import { Menu, X } from 'lucide-react';
 import { ThemeProvider } from './contexts/ThemeContext';
+import Certifications from './sections/certifications';
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState('home');
@@ -97,6 +98,7 @@ export default function Page() {
           <About />
           <Projects />
           <Skills />
+          <Certifications />
           <ConnectWithMe />
         </main>
 

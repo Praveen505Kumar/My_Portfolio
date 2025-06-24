@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Project, Skill, Social } from './types';
+import { Certification, Project, Skill, Social } from './types';
 
 /**
  * Main configuration interface for the entire portfolio
@@ -29,6 +29,7 @@ export interface PortfolioConfig {
     about: AboutSection;
     projects: ProjectsSection;
     skills: SkillsSection;
+    certifications: CertificationsSection;
     connect: ConnectSection;
   };
 
@@ -109,6 +110,16 @@ export interface SkillsSection {
   subtitle: string;
   description: string;
   categories: Skill[];
+}
+
+/**
+ * Certifications section configuration
+ */
+export interface CertificationsSection {
+  title: string;
+  subtitle: string;
+  description: string;
+  certifications: Certification[];
 }
 
 /**
