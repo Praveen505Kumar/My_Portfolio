@@ -29,7 +29,9 @@ const NavBar: React.FC<NavBarProps> = ({ activeSection, onSectionNav }) => {
             onClick={e => onSectionNav(e, 'home')}
           >
             <Code2 className="h-6 w-6 text-emerald-500" />
-            <span>Praveen Kumar</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
+              Praveen Kumar
+            </span>
           </a>
 
           {/* Desktop Navigation */}

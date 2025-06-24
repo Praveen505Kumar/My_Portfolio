@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Skills } from '@/app/sections/skills';
 import { ConnectWithMe } from '@/app/sections/connect';
@@ -67,14 +66,6 @@ export default function Page() {
   return (
     <ThemeProvider>
       <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-gray-200">
-        <Head>
-          <title>Praveen Kumar | Portfolio</title>
-          <meta
-            name="description"
-            content="Personal portfolio website showcasing projects and skills"
-          />
-        </Head>
-
         <div className="fixed top-3.5 right-6 z-50 lg:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
