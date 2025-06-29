@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: portfolioConfig.siteMetadata.title,
   description: portfolioConfig.siteMetadata.description,
   icons: {
-    icon: '/code2-favicon.svg',
+    icon: '/code2favicon.svg',
   },
 };
 

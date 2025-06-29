@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { socials } from '@/app/config/socials';
 import { isMinimal } from '@/app/utils';
+import { SectionHeading } from '../components/SectionHeading';
 
 const ConnectWithMe: React.FC = () => {
   const containerVariants = {
@@ -102,26 +103,11 @@ const ConnectWithMe: React.FC = () => {
       <div className="absolute -right-20 bottom-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section heading */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font- bold text-black dark:text-white ">
-            Connect{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-              With Me
-            </span>
-          </h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-600 dark:text-gray-300  max-w-2xl mx-auto">
-            Feel free to connect with me on these platforms to discuss tech, share ideas, or just
-            say hello!
-          </p>
-        </motion.div>
+        <SectionHeading
+          title="Connect"
+          subtitle="With Me"
+          description="Feel free to connect with me on these platforms to discuss tech, share ideas, or just say hello!"
+        />
 
         {/* Social links grid */}
         <motion.div

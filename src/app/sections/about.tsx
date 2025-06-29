@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Code, Rocket, Lightbulb, BarChart3 } from 'lucide-react';
 import { portfolioConfig } from '@/app/config';
 import { isMinimal } from '@/app/utils';
+import { SectionHeading } from '../components/SectionHeading';
 
 const About = () => {
   const config = portfolioConfig.sections.about;
@@ -53,25 +54,7 @@ const About = () => {
       <div className="absolute -right-20 bottom-40 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Title with animation */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2
-            id="about-title"
-            className="text-3xl md:text-4xl font-bold text-black dark:text-white"
-          >
-            {config.title}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-              {config.subtitle}
-            </span>
-          </h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-        </motion.div>
+        <SectionHeading title={config.title} subtitle={config.subtitle} />
 
         {/* Main content area - 50/50 layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">

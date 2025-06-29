@@ -22,6 +22,7 @@ export const portfolioConfig: PortfolioConfig = {
     links: [
       { href: 'home', label: 'Home' },
       { href: 'about', label: 'About' },
+      { href: 'experience', label: 'Experience' },
       { href: 'projects', label: 'Projects' },
       { href: 'skills', label: 'Skills' },
       { href: 'certifications', label: 'Certifications' },
@@ -113,6 +114,13 @@ export const portfolioConfig: PortfolioConfig = {
       description:
         'I have completed several certifications that validate my skills and knowledge in various technologies and methodologies.',
       certifications: certifications,
+    },
+
+    experiences: {
+      title: 'Experience',
+      subtitle: ' & Education',
+      description: 'My professional journey, academic milestones, and engineering achievements.',
+      experiences: [], // Add your experience data here
     },
 
     connect: {

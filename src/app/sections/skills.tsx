@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { skills } from '@/app/config/skills';
 import { isMinimal } from '@/app/utils';
+import { SectionHeading } from '../components/SectionHeading';
 
 const CategoryIcons = {
   Frontend: () => (
@@ -161,25 +162,11 @@ const Skills: React.FC = () => {
     <section id="skills" className="py-24 relative">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-16"
-          initial={isMinimal ? {} : { opacity: 0, y: 20 }}
-          whileInView={isMinimal ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
-            Technical{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-              Skills
-            </span>
-          </h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I&apos;ve gained proficiency in various technologies throughout my career. Here are the
-            key tools and frameworks I use to build exceptional products.
-          </p>
-        </motion.div>
+        <SectionHeading
+          title="Technical"
+          subtitle="Expertise"
+          description="I have experience with a variety of programming languages, frameworks, and tools. Here are some of the key technologies I work with."
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skills.map((skillGroup, index) => (

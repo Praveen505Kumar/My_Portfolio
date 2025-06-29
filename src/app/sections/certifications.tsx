@@ -3,6 +3,7 @@ import { Award, ExternalLink } from 'lucide-react';
 import { portfolioConfig } from '@/app/config';
 import { useState } from 'react';
 import Image from 'next/image';
+import { SectionHeading } from '../components/SectionHeading';
 
 const Certifications = () => {
   const [hoveredCertification, setHoveredCertification] = useState<number | null>(null);
@@ -10,22 +11,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
-            {title}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-              {subtitle}
-            </span>
-          </h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">{description}</p>
-        </motion.div>
+        <SectionHeading title={title} subtitle={subtitle} description={description} />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
           {certifications.map((cert, index) => (

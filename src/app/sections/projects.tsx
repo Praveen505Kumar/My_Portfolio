@@ -7,6 +7,7 @@ import { Button } from '@/app/components/button';
 import { isMinimal } from '@/app/utils';
 import { SiGithub } from '@icons-pack/react-simple-icons';
 import { socials } from '../config/socials';
+import { SectionHeading } from '../components/SectionHeading';
 
 const Projects: React.FC = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -162,26 +163,11 @@ const Projects: React.FC = () => {
       <div className="absolute -left-20 bottom-1/3 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section heading */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
-            My{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-              Projects
-            </span>
-          </h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
-          <p className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Here&apos;s a selection of projects that showcase my skills and passion for building
-            exceptional digital experiences across different platforms.
-          </p>
-        </motion.div>
+        <SectionHeading
+          title="Projects"
+          subtitle="Showcase"
+          description="Explore my work across web and mobile platforms, demonstrating my expertise in modern technologies."
+        />
 
         {/* Projects grid */}
         <motion.div

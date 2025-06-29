@@ -85,3 +85,21 @@ export interface Certification {
   image: string;
   link?: string;
 }
+
+export interface Experience {
+  id: number;
+  title: string;
+  company: string;
+  date: string;
+  icon: string;
+  link?: string;
+}
+
+// {
+//       title: "B.Tech in Mechanical Engineering",
+//       company: "Gayatri Vidya Parishad College of Engineering",
+//       date: "2020 – 2023",
+//       description: "Graduated with 8.61 CGPA. Focused on Data Structures, OOPs, Networking, and Java development.",
+//       icon: <School />,
+//       iconStyle: { background: '#9C27B0', color: '#fff' }
+//     }
