@@ -4,6 +4,14 @@ import { getAssetPath } from '../utils';
 export const certifications: Certification[] = [
   {
     id: 1,
+    title: 'AWS Certified AI Practitioner',
+    issuer: 'AWS',
+    date: 'Nov-2025',
+    image: getAssetPath('/certifications/aws-certified-ai-practitioner.png'),
+    link: getAssetPath('/certifications/aws-certified-ai-practitioner.png'),
+  },
+  {
+    id: 2,
     title: 'Infosys Certified Generative AI Professional - Intermediate',
     issuer: 'Infosys',
     date: 'Jan-2025',
@@ -11,7 +19,7 @@ export const certifications: Certification[] = [
     link: getAssetPath('/certifications/Infosys Certified Generative AI Professional.jpg'),
   },
   {
-    id: 2,
+    id: 3,
     title: 'Neo4j Certified Professional',
     issuer: 'Neo4j',
     date: 'Dec-2024',
@@ -19,7 +27,7 @@ export const certifications: Certification[] = [
     link: 'https://graphacademy.neo4j.com/c/b3b9e41b-d5ee-44a7-b31b-0fcc3710722c/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Generative AI Learning Plan - Technical Professionals (Partner)',
     issuer: 'AWS',
     date: 'Oct-2024',
@@ -27,7 +35,7 @@ export const certifications: Certification[] = [
     link: getAssetPath('/certifications/AWS Learning Plan Master.jpg'),
   },
   {
-    id: 4,
+    id: 5,
     title: 'StackRoute Javascript Full Stack (MERN)',
     issuer: 'StackRoute',
     date: 'Aug-2022',
